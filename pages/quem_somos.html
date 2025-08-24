@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quem Somos</title>
+
+  <!-- CSS do Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <div class="menu">
+        <div class="texto">
+            <h1>Semafrom </h1> <h3>O sistema que te orienta pelas ruas</h3>
+        </div>   
+        <div class="botoes">
+            <button onclick="window.location.href='sistema.html'">O sistema</button>
+            <button onclick="window.location.href='quem_somos.html'">Quem somos</button>
+            <button onclick="window.location.href='objetivos.html'">Objetivos</button>
+            <button onclick="window.location.href='../index.html'">Início</button>
+        </div>
+        
+    </div>
+    <div class="mainbox">
+        <h1> Como Funciona nosso sistema?</h1>
+        <div>
+          <p>   Nosso sistema é um aplicativo de semáforo voltado para deficientes visuais. O nosso aplicativo
+            detecta os momentos em que o farol está verde ou vermelho e avisa o usário a partir de uma vibração 
+            em seu dispositivo móvel, quando o sinal é  verde a vibração será pulsando, enquanto no vermelho será
+            uma vibração forte, para alertá-lo. 
+          </p>
+          <p>
+            O aplicativo não é excluisivo apenas para deficientes visuais, mas todos podem usufruir, caso alguém esteja andando
+            distraido na rua e for atravessar a faixa, o aplicativo poderá alertar o usuário se o semafóro está aberto ou fechado,
+            evitando assim que sofra ou cause acidentes.
+          </p>
+        </div>
+        <center>
+          <img src="../imgs/ilustracao.png" alt="exemplo" width="70%"  height="70%">
+        </center>
+    </div>
+      
+  <p id="status"></p>
+
+  <!-- Script do Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Nosso script -->
+  <script src="script.js"></script>
+</body>
+</html>
