@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Semafrom</title>
+
+  <!-- CSS do Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu">
+        <div class="texto">
+            <h1>Semafrom </h1> <h3>O sistema que te orienta pelas ruas</h3>
+        </div>   
+        <div class="botoes">
+            <button>O sistema</button>
+            <button>Quem somos</button>
+            <button>Objetivos</button>
+            <button>Botão 4</button>
+        </div>   
+    </div>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+      
+  <p id="status"></p>
+
+  <!-- Script do Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Nosso script -->
+  <script src="script.js"></script>
+</body>
+</html>
