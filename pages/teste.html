@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Objetivos</title>
+  <title>teste</title>
 
   <!-- CSS do Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
   <!-- Seu CSS -->
   <link rel="stylesheet" href="../style.css">
-
+  <link rel="stylesheet" href="../css/toggle.css">
 </head>
 <body>
 
@@ -26,27 +26,27 @@
         
     </div>
     <div class="mainbox">
-        <h1> Objetivos:</h1>
-        <div>
-          <p> Nosso principal objetivo é ajudar a melhorar a qualidade de vida de pessos que são impossibilitadas de enxergar,
-            buscamos nessa tecnologia do semáforo por aplicativo incluir cada vez mais essas pessoas na sociedade em algo tão 
-            comum que é atravessar a rua. Não somente acreditamos que se caso todos iniciarem a utilizar nosso  aplicativo o número
-            de acidentes de trânsito poderá diminuir, evitando acidentes por atropelamento.
-          </p>
-          <p>
-            Temos  por entendimento que igualdade e inclusão não são apenas valores, mas gestos simbólicos que podemos fazer para
-            ajudar a quem precisa sem ver a quem se faz a ação.
-          </p>
-        </div>
-        <center>
-          <h1> Inclusão não é apenas dizer, mas sim fazer.</h1>
-        </center>
+      <h1>Teste</h1>
+    
+      <!-- Imagem maior -->
+      <img id="imagem" src="../imgs/vermelho.png" alt="Estado">
+    
+      <!-- Alavanca centralizada embaixo -->
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
     </div>
+    
+      
   <p id="status"></p>
 
   <!-- Script do Leaflet -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <!-- Nosso script -->
   <script src="script.js"></script>
+  <script src="../js/toggle.js"></script>
 </body>
 </html>

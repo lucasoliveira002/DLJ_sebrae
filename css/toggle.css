@@ -1,0 +1,57 @@
+/* Imagem */
+#imagem {
+    display: block;
+    margin: 0 auto 20px auto; /* centralizada com espaçamento embaixo */
+    max-width: 400px;         /* aumenta o tamanho máximo */
+    width: 100%;              /* ocupa a largura disponível */
+  }
+  
+  /* Container geral */
+  .toggle-container {
+    text-align: center; /* centraliza o botão */
+  }
+  
+  /* Estilo do botão alavanca */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;   /* aumentei um pouco */
+    height: 40px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: red;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: green;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(40px);
+  }
+  
