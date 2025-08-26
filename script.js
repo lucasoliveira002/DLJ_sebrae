@@ -35,9 +35,9 @@ function startTracking() {
           "Erro ao obter localização: " + error.message;
       },
       {
-        enableHighAccuracy: true, // aumenta precisão do GPS
-        maximumAge: 1000,         // não usar posições antigas
-        timeout: 5000             // 5s de tempo máximo para obter posição
+        enableHighAccuracy: true,
+        maximumAge: 1000,        
+        timeout: 5000             
       }
     );
   } else {

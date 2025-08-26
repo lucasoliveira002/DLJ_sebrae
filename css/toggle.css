@@ -1,14 +1,14 @@
 /* Imagem */
 #imagem {
     display: block;
-    margin: 0 auto 20px auto; /* centralizada com espaçamento embaixo */
-    max-width: 400px;         /* aumenta o tamanho máximo */
-    width: 100%;              /* ocupa a largura disponível */
+    margin: 0 auto 20px auto; 
+    max-width: 400px;         
+    width: 100%;              
   }
   
   /* Container geral */
   .toggle-container {
-    text-align: center; /* centraliza o botão */
+    text-align: center; 
   }
   
   /* Estilo do botão alavanca */

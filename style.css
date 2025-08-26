@@ -1,7 +1,7 @@
 .map-container {
-    width: 80%;        /* ou 600px se quiser fixo */
+    width: 80%;        
     height: 400px;     
-    margin: 4px auto 20px; /* topo = altura do header + margem */
+    margin: 4px auto 20px; 
     border: 2px solid #444;
     border-radius: 12px;
     overflow: hidden;
@@ -15,7 +15,7 @@
 
 .menu {
     width: 100%;
-    height: auto;             /* altura ajusta ao conteúdo */
+    height: auto;             
     margin: 0;
     border: 0;
     border-radius: 0;
@@ -26,25 +26,25 @@
     z-index: 1000;
     color: white;
     font-family: Arial, sans-serif;
-    flex-direction: column;   /* empilha os elementos verticalmente */
+    flex-direction: column;   
     
     padding: 10px 0;          /* espaçamento interno */
 }
 
 .texto {
     display: flex; 
-    text-align: center;       /* centraliza o h1 e h3 */
+    text-align: center;       
     gap: 30px;
-    align-items: center;      /* centraliza horizontalmente */
+    align-items: center;      
 }
 
 .botoes {
     display: flex;       /* coloca os botões lado a lado */
-    gap: 10px;           /* espaço entre os botões */
+    gap: 10px;           
 }
 
 .botoes button {
-    flex: 1;             /* todos os botões ocupam o mesmo tamanho */
+    flex: 1;             
     padding: 10px 20px;
     border: 2px solid rgb(9, 3, 65);
     background-color: rgb(4, 34, 99);
@@ -54,18 +54,15 @@
 }
 
 .mainbox {
-    width: 70%;              /* largura do retângulo */
-    max-width: 10000px;        /* largura máxima em telas grandes */
-    min-height: 500px;       /* altura mínima */
-    margin: 150px auto;      /* centraliza na horizontal e dá espaço do topo */
-    padding: 20px;           /* respiro interno */
-    
-    background-color: white; /* cor de fundo da caixa */
-    color: black;            /* cor do texto dentro */
-    
-    border: 2px solid #ccc;  /* borda sutil */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra para destacar */
-    
+    width: 70%;            
+    max-width: 10000px;     
+    min-height: 500px;      
+    margin: 150px auto;      
+    padding: 20px;           
+    background-color: white;
+    color: black;            
+    border: 2px solid #ccc;  
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
     font-family: Arial, sans-serif;
     text-align: left     
 }
