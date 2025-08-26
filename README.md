@@ -31,3 +31,6 @@ HTML5
 CSS3
 JavaScript (ES6)
 Leaflet.js
+
+## ! No momento é possível acessar por meio do github pages, contudo o mapa não funcionará
+https://lucasoliveira002.github.io/DLJ_sebrae/index.html  <-- Link de acesso
