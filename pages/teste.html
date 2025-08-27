@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>teste</title>
+  <meta charset="UTF-8" />
+  <title>Semafrom</title>
 
   <!-- CSS do Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../css/toggle.css">
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Estilos rápidos para centralizar e deixar o botão grande.
+       Se preferir, mova isso para o seu style.css -->
+  <style>
+    main.hero {
+      min-height: calc(100dvh - 120px); /* ajusta se seu header for maior/menor */
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    .cta {
+      font-size: clamp(1.2rem, 2.5vw + 0.5rem, 2rem);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(0,0,0,.15);
+      transition: transform .08s ease, box-shadow .2s ease;
+    }
+    .cta:active {
+      transform: translateY(1px);
+      box-shadow: 0 3px 12px rgba(0,0,0,.15);
+    }
+
+    /* Exemplo opcional de cores; remova se já tiver no seu style.css */
+    .cta {
+      background: #2e7d32; /* verde */
+      color: #fff;
+    }
+
+    /* Só para garantir que o header não cole no topo do botão */
+    .menu { padding: 1rem 1.25rem; }
+    .menu .texto { display: inline-block; margin-right: 1rem; }
+    .menu .botoes button { margin: 0 .25rem; }
+  </style>
 </head>
 <body>
 
-    <div class="menu">
-        <div class="texto">
-            <h1>Semafrom </h1> <h3>O sistema que te orienta pelas ruas</h3>
-        </div>   
-        <div class="botoes">
-            <button onclick="window.location.href='sistema.html'">O sistema</button>
-            <button onclick="window.location.href='teste.html'">Teste</button>
-            <button onclick="window.location.href='objetivos.html'">Objetivos</button>
-            <button onclick="window.location.href='../index.html'">Início</button>
-        </div>
-        
+  <!-- HEADER mantido (com as divs fechadas corretamente) -->
+  <div class="menu">
+    <div class="texto">
+      <h1>Semafrom</h1> <h3>O sistema que te orienta pelas ruas</h3>
     </div>
-    <div class="mainbox">
-      <center>
-        <h1 id="titulo">Vibração Intensa</h1>
-      </center>
-
-      <img id="imagem" src="../imgs/vermelho.png" alt="Estado">
-
-      <div class="toggle-container">
-        <label class="switch">
-          <input type="checkbox" id="toggle">
-          <span class="slider"></span>
-        </label>
-      </div>
+    <div class="botoes">
+      <button onclick="window.location.href='sistema.html'">O sistema</button>
+      <button onclick="window.location.href='teste.html'">Teste</button>
+      <button onclick="window.location.href='objetivos.html'">Objetivos</button>
+      <button onclick="window.location.href='../index.html'">Início</button>
     </div>
+  </div>
 
-    
-      
-  <p id="status"></p>
+  <!-- CONTEÚDO -->
+  <main class="hero" role="main" aria-label="Início da aplicação">
+    <button class="cta" onclick="window.location.href='teste2.html'">
+      Iniciar detecção
+    </button>
+  </main>
 
-  <!-- Script do Leaflet -->
+  <!-- Script do Leaflet (se não for usar aqui, pode remover) -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <!-- Nosso script -->
+  <!-- Seu script -->
   <script src="script.js"></script>
-  <script src="../js/toggle.js"></script>
 </body>
 </html>

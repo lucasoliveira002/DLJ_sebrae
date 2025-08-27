@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>teste</title>
+
+  <!-- CSS do Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/toggle.css">
+</head>
+<body>
+
+    <div class="menu">
+        <div class="texto">
+            <h1>Semafrom </h1> <h3>O sistema que te orienta pelas ruas</h3>
+        </div>   
+        <div class="botoes">
+            <button onclick="window.location.href='sistema.html'">O sistema</button>
+            <button onclick="window.location.href='teste.html'">Teste</button>
+            <button onclick="window.location.href='objetivos.html'">Objetivos</button>
+            <button onclick="window.location.href='../index.html'">Início</button>
+        </div>
+        
+    </div>
+    <div class="mainbox">
+      <center>
+        <h1 id="titulo">Vibração Intensa</h1>
+      </center>
+
+      <img id="imagem" src="../imgs/vermelho.png" alt="Estado">
+
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    
+      
+  <p id="status"></p>
+
+  <!-- Script do Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Nosso script -->
+  <script src="script.js"></script>
+  <script src="../js/toggle.js"></script>
+</body>
+</html>
